@@ -11,6 +11,11 @@ function threeSum(arr, target) {
 			if(Math.abs(sum-target)<Math.abs(closest-target)){
 				closest=sum;
 			}
+			if(sum<target){
+				left++;
+			}else{
+				right--;
+			}
 		}
 	}
 	return closest;
